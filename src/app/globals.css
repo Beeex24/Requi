@@ -1,26 +1,209 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --gradient-kawaii: linear-gradient(135deg, #FFE5EC 0%, #E8D5FF 50%, #D5E8FF 100%);
+    --gradient-primary: linear-gradient(135deg, #d946ef 0%, #f15950 100%);
+    --gradient-pastel: linear-gradient(135deg, #FFB7C5 0%, #C8B6FF 50%, #B6E0FF 100%);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-white text-gray-900 antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* スムーススクロール */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* カスタムスクロールバー */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+    transition: background-color 0.2s;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+  }
+
+  /* フォーカススタイル */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-primary-400 ring-offset-2;
+  }
+
+  /* 選択時の色 */
+  ::selection {
+    @apply bg-primary-200 text-primary-900;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* カワイイボタンスタイル */
+  .btn-kawaii {
+    @apply relative overflow-hidden transition-all duration-300;
+    background: linear-gradient(135deg, #d946ef 0%, #f15950 100%);
+  }
+
+  .btn-kawaii::before {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-300;
+    background: linear-gradient(135deg, #f15950 0%, #d946ef 100%);
+  }
+
+  .btn-kawaii:hover::before {
+    @apply opacity-100;
+  }
+
+  /* グラデーションテキスト */
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-600 to-secondary-500 bg-clip-text text-transparent;
+  }
+
+  /* カード効果 */
+  .card-kawaii {
+    @apply bg-white rounded-2xl shadow-soft transition-all duration-300;
+  }
+
+  .card-kawaii:hover {
+    @apply shadow-xl -translate-y-1;
+  }
+
+  /* パステルバッジ */
+  .badge-pastel {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  }
+
+  /* グロー効果 */
+  .glow {
+    box-shadow: 0 0 20px rgba(217, 70, 239, 0.5);
+  }
+
+  /* ぼかし背景 */
+  .backdrop-kawaii {
+    @apply bg-white/80 backdrop-blur-md;
+  }
+
+  /* アニメーションクラス */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-sparkle {
+    animation: sparkle 2s ease-in-out infinite;
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+  }
+
+  /* ローディングスピナー */
+  .spinner-kawaii {
+    @apply inline-block w-8 h-8 border-4 border-primary-200 border-t-primary-500 rounded-full animate-spin;
+  }
+}
+
+@layer utilities {
+  /* テキストバランス */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* グラデーション背景 */
+  .bg-gradient-kawaii {
+    background: var(--gradient-kawaii);
+  }
+
+  .bg-gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .bg-gradient-pastel {
+    background: var(--gradient-pastel);
+  }
+
+  /* マスク効果 */
+  .mask-fade-bottom {
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  }
+
+  /* トランジション */
+  .transition-kawaii {
+    @apply transition-all duration-300 ease-in-out;
+  }
+}
+
+/* アニメーション定義 */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(0.95);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* モバイル最適化 */
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+  
+  .text-responsive {
+    @apply text-sm;
+  }
+}
+
+/* タブレット最適化 */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .container {
+    @apply px-6;
+  }
+}
+
+/* 印刷用スタイル */
+@media print {
+  .no-print {
+    display: none !important;
+  }
 }
