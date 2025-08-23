@@ -1,15 +1,13 @@
 "use client"
 
-import React, { useState, useEffect } from 'react';
-import { Search, Star, Heart, MessageCircle, Clock, User, Camera, Brush, Mic, Video, Bell, Menu, X, MapPin, Eye, ThumbsUp, Zap, Gift, Sparkles, TrendingUp, Award, Shield, Users, ArrowRight, Play, ChevronDown, Filter, Grid, List, Bookmark, Share, Send, Image, DollarSign, Calendar } from 'lucide-react';
+import React, { useState } from 'react';
+import { Search, Star, Heart, Eye, Zap, Gift, Sparkles, TrendingUp, Award, Shield, Users, Send, Grid, List, Filter, Bookmark, Share, Calendar, Clock, Brush, Camera, Mic, Video } from 'lucide-react';
 
-const SkebLikeCreatorPlatform = () => {
+const HomePage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   const [likedWorks, setLikedWorks] = useState(new Set());
   const [bookmarkedCreators, setBookmarkedCreators] = useState(new Set());
-  const [showNotifications, setShowNotifications] = useState(false);
   const [viewMode, setViewMode] = useState('grid');
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const featuredWorks = [
     {
@@ -117,12 +115,6 @@ const SkebLikeCreatorPlatform = () => {
     "Live2D", "背景", "アイコン", "イラスト", "デザイン"
   ];
 
-  const notifications = [
-    { id: 1, type: 'like', message: 'あなたの作品に❤️がつきました', time: '2分前', unread: true },
-    { id: 2, type: 'order', message: '新しい依頼が届きました', time: '5分前', unread: true },
-    { id: 3, type: 'message', message: 'メッセージが届いています', time: '10分前', unread: false },
-  ];
-
   const filteredWorks = activeCategory === 'all' 
     ? featuredWorks 
     : featuredWorks.filter(work => work.category === activeCategory);
@@ -149,91 +141,6 @@ const SkebLikeCreatorPlatform = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Simple Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-3">
-            <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full flex items-center justify-center">
-                <Sparkles className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
-                Skeb風
-              </span>
-              <span className="hidden sm:inline-block px-2 py-1 bg-pink-100 text-pink-600 text-xs rounded-full font-medium">
-                β版
-              </span>
-            </div>
-            
-            <nav className="hidden md:flex items-center space-x-6">
-              <a href="#" className="text-gray-600 hover:text-pink-500 transition-colors font-medium">作品を見る</a>
-              <a href="#" className="text-gray-600 hover:text-pink-500 transition-colors font-medium">クリエイター</a>
-              <a href="#" className="text-gray-600 hover:text-pink-500 transition-colors font-medium">依頼方法</a>
-              <a href="#" className="text-gray-600 hover:text-pink-500 transition-colors font-medium">ヘルプ</a>
-            </nav>
-
-            <div className="flex items-center space-x-3">
-              {/* Notification */}
-              <div className="relative">
-                <button 
-                  onClick={() => setShowNotifications(!showNotifications)}
-                  className="p-2 text-gray-600 hover:text-pink-500 transition-colors relative"
-                >
-                  <Bell className="w-5 h-5" />
-                  <span className="absolute -top-1 -right-1 w-3 h-3 bg-pink-500 rounded-full animate-pulse"></span>
-                </button>
-                
-                {showNotifications && (
-                  <div className="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-100 py-2 z-50">
-                    <div className="px-4 py-2 border-b border-gray-100">
-                      <h3 className="font-semibold text-gray-900">通知</h3>
-                    </div>
-                    {notifications.map((notif) => (
-                      <div key={notif.id} className="px-4 py-3 hover:bg-gray-50 cursor-pointer">
-                        <div className="flex items-center space-x-3">
-                          <div className={`w-2 h-2 rounded-full ${notif.unread ? 'bg-pink-500' : 'bg-gray-300'}`}></div>
-                          <div className="flex-1">
-                            <p className="text-sm text-gray-900">{notif.message}</p>
-                            <p className="text-xs text-gray-500">{notif.time}</p>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              <button className="text-gray-600 hover:text-pink-500 transition-colors font-medium">
-                ログイン
-              </button>
-              <button className="bg-gradient-to-r from-pink-400 to-purple-400 text-white px-4 py-2 rounded-full hover:shadow-lg transition-all font-medium">
-                クリエイター登録
-              </button>
-              
-              {/* Mobile menu */}
-              <button 
-                className="md:hidden p-2"
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              >
-                {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile Navigation */}
-        {mobileMenuOpen && (
-          <div className="md:hidden border-t border-gray-100 bg-white">
-            <div className="px-4 py-2 space-y-2">
-              <a href="#" className="block py-2 text-gray-600 font-medium">作品を見る</a>
-              <a href="#" className="block py-2 text-gray-600 font-medium">クリエイター</a>
-              <a href="#" className="block py-2 text-gray-600 font-medium">依頼方法</a>
-              <a href="#" className="block py-2 text-gray-600 font-medium">ヘルプ</a>
-            </div>
-          </div>
-        )}
-      </header>
-
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50 py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -808,60 +715,8 @@ const SkebLikeCreatorPlatform = () => {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center space-x-3 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full flex items-center justify-center">
-                  <Sparkles className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-xl font-bold">Skeb風</span>
-              </div>
-              <p className="text-gray-400 text-sm mb-4">
-                シンプルで楽しい創作依頼プラットフォーム
-              </p>
-              <div className="text-sm text-gray-400">
-                © 2024 Skeb風. All rights reserved.
-              </div>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-4">サービス</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">作品を探す</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">絵師を探す</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">カテゴリー</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">人気タグ</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-4">ヘルプ</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">使い方</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">よくある質問</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">お問い合わせ</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">コミュニティ</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-4">絵師向け</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">絵師登録</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">収益化方法</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">ガイドライン</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">サポート</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
 
-export default SkebLikeCreatorPlatform;
+export default HomePage;
