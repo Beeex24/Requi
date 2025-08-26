@@ -1,7 +1,7 @@
 export default {
   content: [
     "./components/**/*.{js,vue,ts}",
-    "./layouts/**/*.vue", 
+    "./layouts/**/*.vue",
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
     "./app.vue",
@@ -12,6 +12,8 @@ export default {
       colors: {
         pink: {
           25: '#fef7f7',
+          50: '#fdf2f8',
+          // 他のカラー設定
         }
       }
     },

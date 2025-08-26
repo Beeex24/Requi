@@ -176,7 +176,7 @@
               :class="`flex items-center space-x-2 px-4 py-2 rounded-full transition-all whitespace-nowrap ${
                 activeCategory === category.id
                   ? 'bg-pink-50 text-pink-600 border border-pink-200'
-                  : 'text-gray-600 hover:text-pink-500 hover:bg-pink-25'
+                  : 'text-gray-600 hover:text-pink-500 hover:bg-pink-50'
               }`"
             >
               <Icon :name="category.iconName" :class="`w-4 h-4 ${activeCategory === category.id ? category.color : 'text-gray-400'}`" />
@@ -193,7 +193,7 @@
                 @click="viewMode = 'grid'"
                 :class="`p-2 rounded transition-colors ${viewMode === 'grid' ? 'bg-white shadow-sm' : ''}`"
               >
-                <Icon name="lucide:grid-3x3" class="w-4 h-4" />
+                <Icon name="lucide:grid" class="w-4 h-4" />
               </button>
               <button
                 @click="viewMode = 'list'"
@@ -916,3 +916,4 @@ onMounted(() => {
 .notification-container {
   /* クリック外でのクローズ処理用 */
 }
+</style>
