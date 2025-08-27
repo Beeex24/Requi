@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* カスタムスタイル */
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -9,6 +10,7 @@
   -webkit-line-clamp: 1;
 }
 
+/* グラデーションテキスト用のユーティリティ */
 .bg-clip-text {
   -webkit-background-clip: text;
   background-clip: text;

@@ -9,7 +9,7 @@
               <Icon name="lucide:sparkles" class="w-5 h-5 text-white" />
             </div>
             <span class="text-xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
-              Skeb風
+              Requi レキ
             </span>
             <span class="hidden sm:inline-block px-2 py-1 bg-pink-100 text-pink-600 text-xs rounded-full font-medium">
               β版
@@ -19,7 +19,7 @@
           <nav class="hidden md:flex items-center space-x-6">
             <NuxtLink to="/works" class="text-gray-600 hover:text-pink-500 transition-colors font-medium">作品を見る</NuxtLink>
             <NuxtLink to="/creators" class="text-gray-600 hover:text-pink-500 transition-colors font-medium">クリエイター</NuxtLink>
-            <NuxtLink to="/guide" class="text-gray-600 hover:text-pink-500 transition-colors font-medium">依頼方法</NuxtLink>
+            <NuxtLink to="/requestmethod" class="text-gray-600 hover:text-pink-500 transition-colors font-medium">依頼方法</NuxtLink>
             <NuxtLink to="/help" class="text-gray-600 hover:text-pink-500 transition-colors font-medium">ヘルプ</NuxtLink>
           </nav>
 
@@ -566,29 +566,29 @@
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold mb-4">
-            みんなに愛されるプラットフォーム
+            新しいクリエイティブな体験を
           </h2>
           <p class="text-pink-100 text-lg">
-            多くの方にご利用いただいています
+            創作者とクリエイターを繋ぐ新しいプラットフォーム
           </p>
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div>
-            <div class="text-4xl font-bold mb-2">800+</div>
-            <div class="text-pink-100">登録絵師数</div>
+            <div class="text-4xl font-bold mb-2">準備中</div>
+            <div class="text-pink-100">登録クリエイター</div>
           </div>
           <div>
-            <div class="text-4xl font-bold mb-2">15,000+</div>
-            <div class="text-pink-100">完了作品数</div>
+            <div class="text-4xl font-bold mb-2">近日開始</div>
+            <div class="text-pink-100">作品リクエスト</div>
           </div>
           <div>
-            <div class="text-4xl font-bold mb-2">4.8</div>
-            <div class="text-pink-100">平均満足度</div>
+            <div class="text-4xl font-bold mb-2">シンプル</div>
+            <div class="text-pink-100">依頼プロセス</div>
           </div>
           <div>
-            <div class="text-4xl font-bold mb-2">98%</div>
-            <div class="text-pink-100">リピート率</div>
+            <div class="text-4xl font-bold mb-2">安心</div>
+            <div class="text-pink-100">取引システム</div>
           </div>
         </div>
       </div>
@@ -628,7 +628,7 @@
               <div class="w-8 h-8 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full flex items-center justify-center">
                 <Icon name="lucide:sparkles" class="w-5 h-5 text-white" />
               </div>
-              <span class="text-xl font-bold">Skeb風</span>
+              <span class="text-xl font-bold">Requi レキ</span>
             </div>
             <p class="text-gray-400 text-sm mb-4">
               シンプルで楽しい創作依頼プラットフォーム
