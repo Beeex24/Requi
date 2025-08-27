@@ -63,7 +63,7 @@
               ログイン
             </button>
             <button class="bg-gradient-to-r from-pink-400 to-purple-400 text-white px-4 py-2 rounded-full hover:shadow-lg transition-all font-medium">
-              クリエイター登録
+              アカウント登録
             </button>
             
             <!-- Mobile menu -->
