@@ -13,7 +13,7 @@
             シンプルで楽しい創作依頼プラットフォーム
           </p>
           <div class="text-sm text-gray-400">
-            © 2024 Requi. All rights reserved.
+            © 2025 Requi. All rights reserved.
           </div>
         </div>
 
@@ -47,8 +47,13 @@
           <h4 class="font-bold mb-4">ヘルプ</h4>
           <ul class="space-y-2 text-sm text-gray-400">
             <li>
-              <NuxtLink to="/requestmethod" class="hover:text-white transition-colors">
-                使い方
+              <NuxtLink to="/privacy" class="hover:text-white transition-colors">
+                プライバシーポリシー
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/terms" class="hover:text-white transition-colors">
+                利用規約
               </NuxtLink>
             </li>
             <li>
@@ -59,11 +64,6 @@
             <li>
               <NuxtLink to="/contact" class="hover:text-white transition-colors">
                 お問い合わせ
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/community" class="hover:text-white transition-colors">
-                コミュニティ
               </NuxtLink>
             </li>
           </ul>
