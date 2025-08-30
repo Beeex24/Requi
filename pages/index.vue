@@ -912,7 +912,40 @@
               </li>
               <li>
                 <NuxtLink
-                  to="/guidelines"
+                  to="/creator-guidelines"
+                  class="hover:text-white transition-colors"
+                  >ガイドライン</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink
+                  to="/creator-support"
+                  class="hover:text-white transition-colors"
+                  >サポート</NuxtLink
+                >
+              </li>
+            </ul>
+          </div>
+            <div>
+            <h4 class="font-bold mb-4">クライアント向け</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>
+                <NuxtLink
+                  to="/client-register"
+                  class="hover:text-white transition-colors"
+                  >アカウント登録</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink
+                  to="/monetization"
+                  class="hover:text-white transition-colors"
+                  >支払い方法</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink
+                  to="/client-guidelines"
                   class="hover:text-white transition-colors"
                   >ガイドライン</NuxtLink
                 >
