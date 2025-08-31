@@ -44,7 +44,7 @@
         </div>
 
         <div>
-          <h4 class="font-bold mb-4">ヘルプ</h4>
+          <h4 class="font-bold mb-4">ABOUT</h4>
           <ul class="space-y-2 text-sm text-gray-400">
             <li>
               <NuxtLink to="/privacy" class="hover:text-white transition-colors">
@@ -70,29 +70,37 @@
         </div>
 
         <div>
-          <h4 class="font-bold mb-4">絵師向け</h4>
-          <ul class="space-y-2 text-sm text-gray-400">
-            <li>
-              <NuxtLink to="/creator-register" class="hover:text-white transition-colors">
-                絵師登録
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/monetization" class="hover:text-white transition-colors">
-                収益化方法
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/guidelines" class="hover:text-white transition-colors">
-                ガイドライン
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/creator-support" class="hover:text-white transition-colors">
-                サポート
-              </NuxtLink>
-            </li>
-          </ul>
+            <h4 class="font-bold mb-4">ヘルプ</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>
+                <NuxtLink
+                  to="/creator-guidelines"
+                  class="hover:text-white transition-colors"
+                  >クリエイターガイドライン</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink
+                  to="/client-guidelines"
+                  class="hover:text-white transition-colors"
+                  >クライアントガイドライン</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink
+                  to="/payinfo"
+                  class="hover:text-white transition-colors"
+                  >支払い方法</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink
+                  to="/creator-support"
+                  class="hover:text-white transition-colors"
+                  >サポート</NuxtLink
+                >
+              </li>
+            </ul>
         </div>
       </div>
     </div>

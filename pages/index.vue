@@ -143,7 +143,7 @@
               class="block py-2 text-gray-600 font-medium"
               >クリエイター</NuxtLink
             >
-            <NuxtLink to="/guide" class="block py-2 text-gray-600 font-medium"
+            <NuxtLink to="/requestmethod" class="block py-2 text-gray-600 font-medium"
               >依頼方法</NuxtLink
             >
             <NuxtLink to="/help" class="block py-2 text-gray-600 font-medium"
@@ -859,7 +859,7 @@
           </div>
 
           <div>
-            <h4 class="font-bold mb-4">ヘルプ</h4>
+            <h4 class="font-bold mb-4">ABOUT</h4>
             <ul class="space-y-2 text-sm text-gray-400">
               <li>
                 <NuxtLink
@@ -894,60 +894,27 @@
           </div>
 
           <div>
-            <h4 class="font-bold mb-4">絵師向け</h4>
+            <h4 class="font-bold mb-4">ヘルプ</h4>
             <ul class="space-y-2 text-sm text-gray-400">
-              <li>
-                <NuxtLink
-                  to="/creator-register"
-                  class="hover:text-white transition-colors"
-                  >絵師登録</NuxtLink
-                >
-              </li>
-              <li>
-                <NuxtLink
-                  to="/monetization"
-                  class="hover:text-white transition-colors"
-                  >収益化方法</NuxtLink
-                >
-              </li>
               <li>
                 <NuxtLink
                   to="/creator-guidelines"
                   class="hover:text-white transition-colors"
-                  >ガイドライン</NuxtLink
-                >
-              </li>
-              <li>
-                <NuxtLink
-                  to="/creator-support"
-                  class="hover:text-white transition-colors"
-                  >サポート</NuxtLink
-                >
-              </li>
-            </ul>
-          </div>
-            <div>
-            <h4 class="font-bold mb-4">クライアント向け</h4>
-            <ul class="space-y-2 text-sm text-gray-400">
-              <li>
-                <NuxtLink
-                  to="/client-register"
-                  class="hover:text-white transition-colors"
-                  >アカウント登録</NuxtLink
-                >
-              </li>
-              <li>
-                <NuxtLink
-                  to="/monetization"
-                  class="hover:text-white transition-colors"
-                  >支払い方法</NuxtLink
+                  >クリエイターガイドライン</NuxtLink
                 >
               </li>
               <li>
                 <NuxtLink
                   to="/client-guidelines"
                   class="hover:text-white transition-colors"
-                  >ガイドライン</NuxtLink
+                  >クライアントガイドライン</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink
+                  to="/payinfo"
+                  class="hover:text-white transition-colors"
+                  >支払い方法</NuxtLink
                 >
               </li>
               <li>
