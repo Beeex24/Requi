@@ -143,7 +143,9 @@
               class="block py-2 text-gray-600 font-medium"
               >クリエイター</NuxtLink
             >
-            <NuxtLink to="/requestmethod" class="block py-2 text-gray-600 font-medium"
+            <NuxtLink
+              to="/requestmethod"
+              class="block py-2 text-gray-600 font-medium"
               >依頼方法</NuxtLink
             >
             <NuxtLink to="/help" class="block py-2 text-gray-600 font-medium"
@@ -179,7 +181,7 @@
         </h1>
 
         <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-          見積もり・打ち合わせ・修正なし。
+          見積もり・打ち合わせなし。リテイクは一回まで
           <br />
           シンプルで気軽な創作依頼プラットフォーム
         </p>
@@ -789,16 +791,20 @@
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <button
-            class="bg-gradient-to-r from-pink-400 to-purple-400 text-white px-8 py-4 rounded-full hover:shadow-lg transition-all font-bold text-lg"
+          <NuxtLink
+            to="/works"
+            class="inline-flex items-center bg-gradient-to-r from-pink-400 to-purple-400 text-white px-8 py-4 rounded-full hover:shadow-lg transition-all font-bold text-lg"
           >
+            <Icon name="lucide:sparkles" class="w-5 h-5 mr-2" />
             作品を探す
-          </button>
-          <button
-            class="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full hover:border-pink-400 hover:text-pink-500 transition-all font-bold text-lg"
+          </NuxtLink>
+          <NuxtLink
+            to="/signup"
+            class="inline-flex items-center border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full hover:border-pink-400 hover:text-pink-500 transition-all font-bold text-lg"
           >
-            絵師として登録
-          </button>
+            <Icon name="lucide:eye" class="w-5 h-5 mr-2" />
+            クリエイター登録
+          </NuxtLink>
         </div>
 
         <div class="mt-6 text-sm text-gray-500">

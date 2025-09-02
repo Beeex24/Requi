@@ -177,17 +177,6 @@
                 <Icon name="lucide:twitter" class="w-5 h-5 mr-2 text-blue-400" />
                 <span class="text-gray-700">Twitterでログイン</span>
               </button>
-              
-              <button
-                type="button"
-                @click="handleLineLogin"
-                class="w-full flex items-center justify-center px-4 py-2 border border-gray-300 rounded-lg shadow-sm bg-white hover:bg-gray-50 transition-colors"
-              >
-                <div class="w-5 h-5 mr-2 bg-green-500 rounded-full flex items-center justify-center">
-                  <span class="text-white text-xs font-bold">L</span>
-                </div>
-                <span class="text-gray-700">LINEでログイン</span>
-              </button>
             </div>
           </form>
         </div>

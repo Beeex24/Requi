@@ -35,7 +35,7 @@
             チャットサポート
           </button>
           <NuxtLink
-            to="/creatorguidelines"
+            to="/creator-guidelines"
             class="inline-flex items-center border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full hover:border-purple-400 hover:text-purple-500 transition-all font-bold text-lg"
           >
             <Icon name="lucide:book-open" class="w-5 h-5 mr-2" />

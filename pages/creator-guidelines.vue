@@ -28,14 +28,14 @@
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <NuxtLink
-            to="/creator-register"
+            to="/signup"
             class="inline-flex items-center bg-gradient-to-r from-pink-400 to-purple-400 text-white px-8 py-4 rounded-full hover:shadow-lg transition-all font-bold text-lg"
           >
             <Icon name="lucide:sparkles" class="w-5 h-5 mr-2" />
             今すぐクリエイター登録
           </NuxtLink>
           <NuxtLink
-            to="/monetization"
+            to="/payinfo"
             class="inline-flex items-center border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full hover:border-pink-400 hover:text-pink-500 transition-all font-bold text-lg"
           >
             <Icon name="lucide:trending-up" class="w-5 h-5 mr-2" />
@@ -852,7 +852,7 @@
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <NuxtLink 
-            to="/creator-register"
+            to="/signup"
             class="inline-flex items-center bg-gradient-to-r from-pink-400 to-purple-400 text-white px-8 py-4 rounded-full hover:shadow-lg transition-all font-bold text-lg"
           >
             <Icon name="lucide:sparkles" class="w-5 h-5 mr-2" />
