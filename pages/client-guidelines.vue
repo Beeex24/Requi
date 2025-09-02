@@ -46,7 +46,7 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
           <div class="bg-white/70 backdrop-blur-sm rounded-lg p-3">
             <div class="font-bold text-blue-600">手数料</div>
-            <div class="text-gray-900">6%〜</div>
+            <div class="text-gray-900">5%</div>
           </div>
           <div class="bg-white/70 backdrop-blur-sm rounded-lg p-3">
             <div class="font-bold text-blue-600">決済</div>
@@ -349,25 +349,25 @@
               <h3 class="text-xl font-semibold text-gray-900 mb-4">手数料について</h3>
               <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg">
                 <div class="text-center mb-4">
-                  <div class="text-3xl font-bold text-blue-600 mb-2">6%〜9.8%</div>
+                  <div class="text-3xl font-bold text-blue-600 mb-2">5%</div>
                   <div class="text-gray-700">作品代金に手数料が加算されます</div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
                   <div>
                     <div class="font-semibold text-blue-900">〜¥10,000</div>
-                    <div class="text-sm text-blue-700">手数料 9.8%</div>
+                    <div class="text-sm text-blue-700">手数料 5%</div>
                   </div>
                   <div>
                     <div class="font-semibold text-blue-900">¥10,001〜¥50,000</div>
-                    <div class="text-sm text-blue-700">手数料 7.8%</div>
+                    <div class="text-sm text-blue-700">手数料 5%</div>
                   </div>
                   <div>
                     <div class="font-semibold text-blue-900">¥50,001〜</div>
-                    <div class="text-sm text-blue-700">手数料 6.0%</div>
+                    <div class="text-sm text-blue-700">手数料 5%</div>
                   </div>
                 </div>
                 <div class="text-center mt-4 text-sm text-blue-600">
-                  例：¥10,000の作品の場合、お支払い総額は¥10,980
+                  例：¥10,000の作品の場合、お支払い総額は¥10,500
                 </div>
               </div>
             </div>

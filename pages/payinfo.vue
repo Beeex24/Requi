@@ -142,17 +142,17 @@
               <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                   <div class="text-center">
-                    <div class="text-3xl font-bold text-blue-600 mb-2">9.8%</div>
+                    <div class="text-3xl font-bold text-blue-600 mb-2">5%</div>
                     <div class="text-sm text-blue-800">〜¥10,000の依頼</div>
                     <div class="text-xs text-gray-600 mt-1">少額案件向け</div>
                   </div>
                   <div class="text-center">
-                    <div class="text-3xl font-bold text-indigo-600 mb-2">7.8%</div>
+                    <div class="text-3xl font-bold text-indigo-600 mb-2">5%</div>
                     <div class="text-sm text-indigo-800">¥10,001〜¥50,000</div>
                     <div class="text-xs text-gray-600 mt-1">標準的な案件</div>
                   </div>
                   <div class="text-center">
-                    <div class="text-3xl font-bold text-purple-600 mb-2">6.0%</div>
+                    <div class="text-3xl font-bold text-purple-600 mb-2">5%</div>
                     <div class="text-sm text-purple-800">¥50,001以上</div>
                     <div class="text-xs text-gray-600 mt-1">大型案件向け</div>
                   </div>
@@ -163,15 +163,15 @@
                   <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div class="bg-white p-3 rounded border">
                       <div class="font-medium text-gray-900">¥5,000の作品</div>
-                      <div class="text-sm text-gray-600">作品代 + 手数料(¥490) = <strong>¥5,490</strong></div>
+                      <div class="text-sm text-gray-600">作品代 + 手数料(¥250) = <strong>¥5,250</strong></div>
                     </div>
                     <div class="bg-white p-3 rounded border">
                       <div class="font-medium text-gray-900">¥20,000の作品</div>
-                      <div class="text-sm text-gray-600">作品代 + 手数料(¥1,560) = <strong>¥21,560</strong></div>
+                      <div class="text-sm text-gray-600">作品代 + 手数料(¥1,000) = <strong>¥21,000</strong></div>
                     </div>
                     <div class="bg-white p-3 rounded border">
                       <div class="font-medium text-gray-900">¥80,000の作品</div>
-                      <div class="text-sm text-gray-600">作品代 + 手数料(¥4,800) = <strong>¥84,800</strong></div>
+                      <div class="text-sm text-gray-600">作品代 + 手数料(¥4,000) = <strong>¥84,000</strong></div>
                     </div>
                   </div>
                 </div>
@@ -283,17 +283,17 @@
               <div class="bg-gradient-to-r from-green-50 to-teal-50 p-6 rounded-lg">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                   <div class="text-center">
-                    <div class="text-3xl font-bold text-red-600 mb-2">9.8%</div>
+                    <div class="text-3xl font-bold text-red-600 mb-2">5%</div>
                     <div class="text-sm text-red-800">新人クリエイター</div>
                     <div class="text-xs text-gray-600 mt-1">実績0〜10件</div>
                   </div>
                   <div class="text-center">
-                    <div class="text-3xl font-bold text-orange-600 mb-2">7.8%</div>
+                    <div class="text-3xl font-bold text-orange-600 mb-2">5%</div>
                     <div class="text-sm text-orange-800">レギュラークリエイター</div>
                     <div class="text-xs text-gray-600 mt-1">実績11〜50件</div>
                   </div>
                   <div class="text-center">
-                    <div class="text-3xl font-bold text-green-600 mb-2">6.0%</div>
+                    <div class="text-3xl font-bold text-green-600 mb-2">5%</div>
                     <div class="text-sm text-green-800">プロクリエイター</div>
                     <div class="text-xs text-gray-600 mt-1">実績51件以上</div>
                   </div>
@@ -304,15 +304,15 @@
                   <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div class="bg-white p-3 rounded border">
                       <div class="font-medium text-gray-900">¥10,000の作品</div>
-                      <div class="text-sm text-gray-600">作品代 - 手数料(¥980) = <strong>¥9,020</strong></div>
+                      <div class="text-sm text-gray-600">作品代 - 手数料(¥500) = <strong>¥9,500</strong></div>
                     </div>
                     <div class="bg-white p-3 rounded border">
                       <div class="font-medium text-gray-900">¥30,000の作品</div>
-                      <div class="text-sm text-gray-600">作品代 - 手数料(¥2,340) = <strong>¥27,660</strong></div>
+                      <div class="text-sm text-gray-600">作品代 - 手数料(¥1,500) = <strong>¥28,500</strong></div>
                     </div>
                     <div class="bg-white p-3 rounded border">
                       <div class="font-medium text-gray-900">¥100,000の作品</div>
-                      <div class="text-sm text-gray-600">作品代 - 手数料(¥6,000) = <strong>¥94,000</strong></div>
+                      <div class="text-sm text-gray-600">作品代 - 手数料(¥5,000) = <strong>¥95,000</strong></div>
                     </div>
                   </div>
                 </div>

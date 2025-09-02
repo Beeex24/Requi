@@ -46,7 +46,7 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
           <div class="bg-white/70 backdrop-blur-sm rounded-lg p-3">
             <div class="font-bold text-pink-600">手数料</div>
-            <div class="text-gray-900">6%〜9.8%</div>
+            <div class="text-gray-900">５%（条件あり）</div>
           </div>
           <div class="bg-white/70 backdrop-blur-sm rounded-lg p-3">
             <div class="font-bold text-pink-600">支払い</div>
@@ -334,7 +334,7 @@
           <div class="space-y-8">
             <!-- Pricing Strategy -->
             <div>
-              <h3 class="text-xl font-semibold text-gray-900 mb-4">料金設定のコツ</h3>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">料金設定のコツ（参考）</h3>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h4 class="font-medium text-gray-900 mb-3">初心者向け価格帯</h4>
@@ -387,17 +387,17 @@
               <div class="bg-gradient-to-r from-pink-50 to-purple-50 p-6 rounded-lg">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div class="text-center">
-                    <div class="text-3xl font-bold text-pink-600 mb-2">9.8%</div>
+                    <div class="text-3xl font-bold text-pink-600 mb-2">5%</div>
                     <div class="text-sm text-gray-600">新人クリエイター</div>
                     <div class="text-xs text-gray-500">実績0〜10件</div>
                   </div>
                   <div class="text-center">
-                    <div class="text-3xl font-bold text-purple-600 mb-2">7.8%</div>
+                    <div class="text-3xl font-bold text-purple-600 mb-2">5%</div>
                     <div class="text-sm text-gray-600">レギュラークリエイター</div>
                     <div class="text-xs text-gray-500">実績11〜50件</div>
                   </div>
                   <div class="text-center">
-                    <div class="text-3xl font-bold text-blue-600 mb-2">6.0%</div>
+                    <div class="text-3xl font-bold text-blue-600 mb-2">5%</div>
                     <div class="text-sm text-gray-600">プロクリエイター</div>
                     <div class="text-xs text-gray-500">実績51件以上</div>
                   </div>

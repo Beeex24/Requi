@@ -24,7 +24,7 @@
       </div>
       
       <div class="mt-6 text-sm text-gray-500">
-        ✨ 登録無料 • 手数料6%〜 • 24時間サポート
+        ✨ 登録無料 • 手数料5％！！ • 24時間サポート
       </div>
     </div>
   </section>
